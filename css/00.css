@@ -16,6 +16,14 @@ body{
 .banner{
 	width:100%;
 	margin:0px auto;
+	-webkit-animation-name:ant;
+	animation-name:ant;
+	animation-duration:3s;
+	
+}
+@keyframes ant{
+	from{ opacity: 0;}
+	to{opacity: 1;}
 }
 
 
@@ -118,6 +126,12 @@ body{
     position: relative;
     display: inline-block;
 	width:32%;
+	opacity: 0.5;
+}
+
+.tooltip:hover{
+    opacity: 1;
+	cursor:pointer;
 }
 
 /* Tooltip text */
@@ -129,6 +143,7 @@ body{
     text-align: left;
     padding: 15px 15px;
     border-radius: 6px;
+	line-height: 24px;
  
     /* Position the tooltip text - see examples below! */
     position: absolute;
